@@ -1,0 +1,7 @@
+<ion-view view-title="{{'viewMap' | translate}}">
+  	<ion-content data-tap-disabled="true">
+        <div ui-gmap-google-map center='map.center' zoom='map.zoom' events="map.markersEvents" control="googlemap" options="mapOptions">
+	        <div ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id" closeClick="hideMarkerPopup()" onClicked="showMarkerPopup()"></div>
+	    </div>
+    </ion-content>
+</ion-view>
